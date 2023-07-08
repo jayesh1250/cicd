@@ -10,7 +10,7 @@ module "jenkins-server-vpc" {
   enable_nat_gateway   = true
   single_nat_gateway   = true
   enable_dns_hostnames = true
-/*
+
   tags = {
     "kubernetes.io/cluster/jenkins-server-eks-cluster" = "shared"
   }
@@ -24,7 +24,6 @@ module "jenkins-server-vpc" {
     "kubernetes.io/cluster/jenkins-server-eks-cluster" = "shared"
     "kubernetes.io/role/internal-elb"         = 1
   }
-  */
 }
 
 
