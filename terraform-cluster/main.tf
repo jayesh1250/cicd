@@ -36,12 +36,12 @@ module "eks" {
 
     cluster_endpoint_public_access  = true
 
-    vpc_id = module.myjenkins-server-vpc.vpc_id
-    subnet_ids = module.myjenkins-server-vpc.private_subnets
+    vpc_id = module.jenkins-server-vpc.vpc_id
+    subnet_ids = module.jenkins-server-vpc.private_subnets
 
     tags = {
         environment = "development"
-        application = "myjenkins-server"
+        application = "jenkins-server"
     }
 
     eks_managed_node_groups = {
